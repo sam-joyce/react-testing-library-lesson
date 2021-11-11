@@ -1,8 +1,12 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const Form = () => {
   const [hasSubmitted, setHasSubmitted] = useState(false);
   const [hasError, setHasError] = useState(false);
+
+  useEffect(() => {
+    console.log("Adding to test gh actions");
+  }, []);
 
   const handleSubmit = e => {
     e.preventDefault();
